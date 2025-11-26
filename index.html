@@ -158,10 +158,10 @@
 
     <!-- JavaScript Logic -->
     <script>
-        // --- Data Configuration (Preserved Data, Updated Icons) ---
+        // --- Data Configuration (Updated with days of the week) ---
         const workoutData = [
             {
-                day: "اليوم 1",
+                day: "السبت",
                 burn: "250–300",
                 meals: { b: 350, l: 450, d: 800, note: "(أكبر وجبة)" },
                 exercises: [
@@ -173,7 +173,7 @@
                 ]
             },
             {
-                day: "اليوم 2",
+                day: "الأحد",
                 burn: "220–300",
                 meals: { b: 300, l: 450, d: 850, note: "" },
                 exercises: [
@@ -185,7 +185,7 @@
                 ]
             },
             {
-                day: "اليوم 3",
+                day: "الاثنين",
                 burn: "300–350",
                 meals: { b: 350, l: 400, d: 850, note: "" },
                 exercises: [
@@ -196,7 +196,7 @@
                 ]
             },
             {
-                day: "اليوم 4",
+                day: "الثلاثاء",
                 subtitle: "راحة خفيفة",
                 burn: "150–200",
                 meals: { b: 300, l: 400, d: 900, note: "" },
@@ -206,7 +206,7 @@
                 ]
             },
             {
-                day: "اليوم 5",
+                day: "الأربعاء",
                 burn: "250–300",
                 meals: { b: 300, l: 450, d: 850, note: "" },
                 exercises: [
@@ -218,7 +218,7 @@
                 ]
             },
             {
-                day: "اليوم 6",
+                day: "الخميس",
                 burn: "250–320",
                 meals: { b: 350, l: 400, d: 850, note: "" },
                 exercises: [
@@ -230,7 +230,7 @@
                 ]
             },
             {
-                day: "اليوم 7",
+                day: "الجمعة",
                 subtitle: "راحة تامة",
                 burn: "40–60",
                 meals: { b: 300, l: 400, d: 900, note: "" },
@@ -373,7 +373,7 @@
                     <div class="flex items-center justify-between mb-6">
                         <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
                             <i class="fa-solid fa-list-check text-emerald-600"></i>
-                            تمارين اليوم
+                            تمارين ${data.day}
                         </h3>
                         <span class="bg-white px-3 py-1 rounded-full text-xs font-bold text-gray-500 border shadow-sm">
                             ${data.exercises.length} تمرين
